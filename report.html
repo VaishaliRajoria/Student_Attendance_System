@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Attendance Report</title>
+  <link rel="stylesheet" href="report.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Report</h2>
+      <ul>
+        <li><a href="dashboard.html">🏠 Dashboard</a></li><br><br>
+        <li><a href="attendance.html">📅 Attendance</a></li><br><br>
+        <li><a href="report.html" class="active">📄 Report</a></li><br><br>
+        <li><a href="login.html" onclick="logout()">🚪 Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main">
+      <div class="top-bar">
+        <h1>Attendance Report</h1>
+        <button onclick="logout()" class="logout-btn">Logout</button>
+      </div>
+
+      <div class="report-block">
+        <h3>Student Attendance History</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Roll No</th>
+              <th>Name</th>
+              <th>Date</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="report-table">
+            <!-- Sample rows (can be replaced with PHP/JS fetching from DB) -->
+            <tr>
+              <td>01</td>
+              <td>Anamika Sharma</td>
+              <td>2025-07-01</td>
+              <td>Present</td>
+            </tr>
+            <tr>
+              <td>02</td>
+              <td>Anshika Maheshwari</td>
+              <td>2025-07-01</td>
+              <td>Leave</td>
+            </tr>
+            <tr>
+              <td>03</td>
+              <td>Drishti Jadon</td>
+              <td>2025-07-01</td>
+              <td>Absent</td>
+            </tr>
+            <tr>
+              <td>04</td>
+              <td>Himanshi Dixit</td>
+              <td>2025-07-01</td>
+              <td>Present</td>
+            </tr>
+            <tr>
+              <td>05</td>
+              <td>Ilma Gulzar</td>
+              <td>2025-07-01</td>
+              <td>Present</td>
+            </tr>
+            <tr>
+              <td>06</td>
+              <td>Isha</td>
+              <td>2025-07-01</td>
+              <td>Present</td>
+            </tr>
+            <tr>
+              <td>07</td>
+              <td>Krati Gupta</td>
+              <td>2025-07-01</td>
+              <td>Absent</td>
+            </tr>
+            <tr>
+              <td>08</td>
+              <td>Mansi Varshney</td>
+              <td>2025-07-01</td>
+              <td>Present</td>
+            </tr>
+            <tr>
+              <td>09</td>
+              <td>Mamta Kumari</td>
+              <td>2025-07-01</td>
+              <td>Present</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Priyanka Sharma</td>
+              <td>2025-07-01</td>
+              <td>Present</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>Pinky Kumari</td>
+              <td>2025-07-01</td>
+              <td>Present</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>Rekha Thakur</td>
+              <td>2025-07-01</td>
+              <td>Present</td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>Soniya</td>
+              <td>2025-07-01</td>
+              <td>Absent</td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>Unzila</td>
+              <td>2025-07-01</td>
+              <td>Present</td>
+            </tr>
+            <tr>
+              <td>15</td>
+              <td>Vaishali Rajoria</td>
+              <td>2025-07-01</td>
+              <td>Present</td>
+            </tr>
+             <tr>
+              <td>01</td>
+              <td>Anamika Sharma</td>
+              <td>2025-07-02</td>
+              <td>Present</td>
+            </tr>
+            <tr>
+              <td>02</td>
+              <td>Anshika Maheshwari</td>
+              <td>2025-07-02</td>
+              <td>Absent</td>
+            </tr>
+            <tr>
+              <td>03</td>
+              <td>Drishti Jadon</td>
+              <td>2025-07-02</td>
+              <td>Absent</td>
+            </tr>
+            <tr>
+              <td>04</td>
+              <td>Himanshi Dixit</td>
+              <td>2025-07-02</td>
+              <td>Leave</td>
+            </tr>
+            <tr>
+              <td>05</td>
+              <td>Ilma Gulzar</td>
+              <td>2025-07-02</td>
+              <td>Absent</td>
+            </tr>
+            <tr>
+              <td>06</td>
+              <td>Isha</td>
+              <td>2025-07-02</td>
+              <td>Leave</td>
+            </tr>
+            <tr>
+              <td>07</td>
+              <td>Krati Gupta</td>
+              <td>2025-07-02</td>
+              <td>Absent</td>
+            </tr>
+            <tr>
+              <td>08</td>
+              <td>Mansi Varshney</td>
+              <td>2025-07-02</td>
+              <td>Absent</td>
+            </tr>
+            <tr>
+              <td>09</td>
+              <td>Mamta Kumari</td>
+              <td>2025-07-02</td>
+              <td>Present</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Priyanka Sharma</td>
+              <td>2025-07-02</td>
+              <td>Present</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>Pinky Kumari</td>
+              <td>2025-07-02</td>
+              <td>Present</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>Rekha Thakur</td>
+              <td>2025-07-02</td>
+              <td>Present</td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>Soniya</td>
+              <td>2025-07-02</td>
+              <td>Absent</td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>Unzila</td>
+              <td>2025-07-02</td>
+              <td>Absent</td>
+            </tr>
+            <tr>
+              <td>15</td>
+              <td>Vaishali Rajoria</td>
+              <td>2025-07-02</td>
+              <td>Absent</td>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function logout() {
+      window.location.href = "logout.php";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to left, #6dd5ed, #eceded);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Login Container */
+.login-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2{
+font-size: 30px;
+font-weight: 600;
+}
+
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Error Message */
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+/* Button */
+button {
+    background: #007BFF;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Contact Admin */
+.contact-admin {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="logincss.css">
+    <script defer src="loginjs.js"></script>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Admin Login</h2>
+        <form id="login-form" action="login.php" method="POST">
+            <label for="name">Admin Name</label>
+            <input type="text" id="name" name="admin_name" placeholder="Enter your name" required>
+            <p id="name-error" class="error"></p>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter password" required>
+            <p id="password-error" class="error"></p>
+
+            <button type="submit">Login</button>
+        </form>
+        <p class="contact-admin">Don't have an account? Contact administration.</p>
+    </div>
+</body>
+</html>

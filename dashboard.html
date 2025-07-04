@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="dashboardcss.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h2>Dashboard</h2>
+      <ul>
+        <li><a href="dashboard.html">🏠 Dashboard</a></li><br><br>
+        <li><a href="attendance.html">📅 Attendance</a></li><br><br>
+       <li><a href="report.html" class="active">📄 Report</a></li><br><br>
+        <li><a href="login.html" onclick="logout()">🚪 Logout</a></li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <div class="top-bar">
+        <button class="logout-btn" onclick="logout()">Logout</button>
+      </div>
+
+      <div class="class-section">
+        <h2>Select Your Class</h2>
+        <div class="class-blocks">
+          <button onclick="goToAttendance('Class A')">Class A</button>
+          <button onclick="goToAttendance('Class B')">Class B</button>
+          <button onclick="goToAttendance('Class C')">Class C</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="dashboardjs.js"></script>
+</body>
+</html>

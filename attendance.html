@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Attendance</title>
+  <link rel="stylesheet" href="attendancecss.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Attendance</h2>
+      <ul>
+        <li><a href="dashboard.html">🏠 Dashboard</a></li><br><br>
+        <li><a href="attendance.html" class="active">📅 Attendance</a></li><br><br>
+        <li><a href="report.html" class="active">📄 Report</a></li><br><br>
+        <li><a href="login.html" onclick="logout()">🚪 Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main">
+      <div class="top-bar">
+        <h1>Attendance</h1>
+        <button onclick="logout()" class="logout-btn">Logout</button>
+      </div>
+
+      <div class="attendance-block">
+        <label for="attendance-date">Select Date:</label>
+        <input type="date" id="attendance-date" />
+
+        <table>
+          <thead>
+            <tr>
+              <th>Roll No</th>
+              <th>Name</th>
+              <th>Father's Name</th>
+              <th>Phone No.</th>
+              <th>Present</th>
+              <th>Absent</th>
+              <th>Leave</th>
+            </tr>
+          </thead>
+          <tbody id="student-table">
+            <!-- Student rows will be inserted here via JS or PHP -->
+            <tr>
+              <td>01</td>
+              <td>Anamika Sharma</td>
+              <td>Ankit Sharma</td>
+              <td>9345554662</td>
+              <td><input type="radio" name="att_01" value="Present" /></td>
+              <td><input type="radio" name="att_01" value="Absent" /></td>
+              <td><input type="radio" name="att_01" value="Leave" /></td>
+            </tr>
+            <tr>
+              <td>02</td>
+              <td>Anshika Maheshwari</td>
+              <td>Rahul Maheshwari</td>
+              <td>9452345543</td>
+              <td><input type="radio" name="att_02" value="Present" /></td>
+              <td><input type="radio" name="att_02" value="Absent" /></td>
+              <td><input type="radio" name="att_02" value="Leave" /></td>
+            </tr>
+            <tr>
+              <td>03</td>
+              <td>Drishti Jadon</td>
+              <td>Pramod Jadon</td>
+              <td>9567832234</td>
+              <td><input type="radio" name="att_03" value="Present" /></td>
+              <td><input type="radio" name="att_03" value="Absent" /></td>
+              <td><input type="radio" name="att_03" value="Leave" /></td>
+            </tr>
+            <tr>
+              <td>04</td>
+              <td>Himanshi Dixit</td>
+              <td>Mohit Dixit</td>
+              <td>8843634421</td>
+              <td><input type="radio" name="att_04" value="Present" /></td>
+              <td><input type="radio" name="att_04" value="Absent" /></td>
+              <td><input type="radio" name="att_04" value="Leave" /></td>
+            </tr>
+            <tr>
+              <td>05</td>
+              <td>Ilma Gulzar</td>
+              <td>Md. Zakher GUlzar</td>
+              <td>7045673423</td>
+              <td><input type="radio" name="att_05" value="Present" /></td>
+              <td><input type="radio" name="att_05" value="Absent" /></td>
+              <td><input type="radio" name="att_05" value="Leave" /></td>
+            </tr>
+            <tr>
+              <td>06</td>
+              <td>Isha </td>
+              <td>Vivek Kumar</td>
+              <td>8065432321</td>
+              <td><input type="radio" name="att_06" value="Present" /></td>
+              <td><input type="radio" name="att_06" value="Absent" /></td>
+              <td><input type="radio" name="att_06" value="Leave" /></td>
+            </tr>
+            <tr>
+              <td>07</td>
+              <td>Krati Gupta</td>
+              <td>Shivam Gupta</td>
+              <td>7653567868</td>
+              <td><input type="radio" name="att_07" value="Present" /></td>
+              <td><input type="radio" name="att_07" value="Absent" /></td>
+              <td><input type="radio" name="att_07" value="Leave" /></td>
+            </tr>
+            <tr>
+              <td>08</td>
+              <td>Mansi Varshney</td>
+              <td>Yogesh Varshney</td>
+              <td>6789345660</td>
+              <td><input type="radio" name="att_08" value="Present" /></td>
+              <td><input type="radio" name="att_08" value="Absent" /></td>
+              <td><input type="radio" name="att_08" value="Leave" /></td>
+            </tr>
+            <tr>
+              <td>09</td>
+              <td>Mamta Kumari</td>
+              <td>Anam Kumar</td>
+              <td>7643342352</td>
+              <td><input type="radio" name="att_09" value="Present" /></td>
+              <td><input type="radio" name="att_09" value="Absent" /></td>
+              <td><input type="radio" name="att_09" value="Leave" /></td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Priyanka Sharma</td>
+              <td>Vishwas Sharma</td>
+              <td>9012343214</td>
+              <td><input type="radio" name="att_10" value="Present" /></td>
+              <td><input type="radio" name="att_10" value="Absent" /></td>
+              <td><input type="radio" name="att_10" value="Leave" /></td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>Pinky Kumari</td>
+              <td>Ramit Kumar</td>
+              <td>7654450656</td>
+              <td><input type="radio" name="att_11" value="Present" /></td>
+              <td><input type="radio" name="att_11" value="Absent" /></td>
+              <td><input type="radio" name="att_11" value="Leave" /></td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>Rekha Thakur</td>
+              <td>Dinesh Thakur</td>
+              <td>8967646345</td>
+              <td><input type="radio" name="att_12" value="Present" /></td>
+              <td><input type="radio" name="att_12" value="Absent" /></td>
+              <td><input type="radio" name="att_12" value="Leave" /></td>
+            </tr><tr>
+              <td>13</td>
+              <td>Soniya</td>
+              <td>Hitesh Kumar</td>
+              <td>9547382011</td>
+              <td><input type="radio" name="att_13" value="Present" /></td>
+              <td><input type="radio" name="att_13" value="Absent" /></td>
+              <td><input type="radio" name="att_13" value="Leave" /></td>
+            </tr><tr>
+              <td>14</td>
+              <td>Unzila</td>
+              <td>Md. Faizal</td>
+              <td>9786554542</td>
+              <td><input type="radio" name="att_14" value="Present" /></td>
+              <td><input type="radio" name="att_14" value="Absent" /></td>
+              <td><input type="radio" name="att_14" value="Leave" /></td>
+            </tr><tr>
+              <td>15</td>
+              <td>Vaishali Rajoria</td>
+              <td>Vishnu Kumar Rajoria</td>
+              <td>7017696854</td>
+              <td><input type="radio" name="att_15" value="Present" /></td>
+              <td><input type="radio" name="att_15" value="Absent" /></td>
+              <td><input type="radio" name="att_15" value="Leave" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <button class="mark-btn" onclick="markAttendance()">Mark Attendance</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function logout() {
+      window.location.href = "logout.php";
+    }
+
+    function markAttendance() {
+      const date = document.getElementById("attendance-date").value;
+      if (!date) {
+        alert("Please select a date first!");
+        return;
+      }
+      alert("Attendance marked successfully for " + date);
+      // Here you can send data to PHP for database insertion using fetch/ajax
+    }
+  </script>
+</body>
+</html>
